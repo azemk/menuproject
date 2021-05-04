@@ -13,7 +13,7 @@ public class Item {
     private String name ;
     @Column (name ="description",nullable = false,unique = true)
     private String description;
-    @Column (name ="weigth",nullable=false)
+    @Column (name ="weight",nullable=false)
     private String weight;
     @Column (name ="price",nullable=false)
     private Double price ;
