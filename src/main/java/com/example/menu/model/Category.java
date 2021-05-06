@@ -11,14 +11,14 @@ public class Category {
     @Column (name ="category",nullable = false,unique = true)
     private String category;
     @Column (name ="picture")
-    private String picture;
+    private String pictureUrlC;
 
     public Category() {
     }
 
     public Category( String category, String picture) {
         this.category = category;
-        this.picture = picture;
+        this.pictureUrlC = picture;
     }
 
     public Long getId() {
@@ -37,11 +37,11 @@ public class Category {
         this.category = category;
     }
 
-    public String getPicture() {
-        return picture;
+    public String getPictureUrlC() {
+        return pictureUrlC;
     }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
+    public void setPictureUrlC(String pictureUrlC) {
+        this.pictureUrlC = pictureUrlC;
     }
 }

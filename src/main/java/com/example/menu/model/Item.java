@@ -18,7 +18,7 @@ public class Item {
     @Column (name ="price",nullable=false)
     private Double price ;
     @Column(name ="picture")
-    private String picture;
+    private String pictureUrl;
     @ManyToOne
     @JoinColumn(name="category",nullable = false)
     private Category category;
@@ -31,7 +31,7 @@ public class Item {
         this.description = description;
         this.weight = weight;
         this.price = price;
-        this.picture = picture;
+        this.pictureUrl = picture;
         this.category = category;
     }
 
@@ -76,11 +76,11 @@ public class Item {
     }
 
     public String getPicture() {
-        return picture;
+        return pictureUrl;
     }
 
     public void setPicture(String picture) {
-        this.picture = picture;
+        this.pictureUrl = picture;
     }
 
     public Category getCategory() {
